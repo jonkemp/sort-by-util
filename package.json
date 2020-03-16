@@ -1,0 +1,44 @@
+{
+	"name": "sort-by-util",
+	"version": "1.0.0",
+	"description": "Returns a sorted copy of an array, ranked in ascending order by the results of running each value through an iteratee.",
+	"main": "index.js",
+	"scripts": {
+		"build": "rollup --config",
+		"prepublishOnly": "npm run build",
+		"lint": "eslint . --max-warnings 0",
+		"lint:fix": "eslint . --fix --max-warnings 0",
+		"test": "mocha"
+	},
+	"files": [
+		"index.js",
+		"umd/"
+	],
+	"repository": "jonkemp/sort-by-util",
+	"keywords": [
+		"array",
+		"sort",
+		"utility",
+		"util"
+	],
+	"author": {
+		"name": "Jonathan Kemp",
+		"email": "kempdogg@gmail.com",
+		"url": "http://jonkemp.com/"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/jonkemp/sort-by-util/issues"
+	},
+	"homepage": "https://github.com/jonkemp/sort-by-util#readme",
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^11.0.2",
+		"@rollup/plugin-node-resolve": "^7.1.1",
+		"eslint": "^6.8.0",
+		"mocha": "^7.1.0",
+		"rollup": "^2.0.6"
+	},
+	"dependencies": {
+		"pluck-util": "^1.0.1"
+	}
+}
