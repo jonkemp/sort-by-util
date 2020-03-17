@@ -12,7 +12,8 @@
 	},
 	"files": [
 		"index.js",
-		"umd/"
+		"lib",
+		"umd"
 	],
 	"repository": "jonkemp/sort-by-util",
 	"keywords": [
