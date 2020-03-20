@@ -1,7 +1,7 @@
 const assert = require('assert');
 const pluck = require('pluck-util');
+const fromPairs = require('from-pairs');
 const sortBy = require('./');
-const object = require('./lib/object');
 const identity = value => value;
 
 function Pair(x, y) {
@@ -75,7 +75,7 @@ describe('sortBy', () => {
 	});
 
 	it('should be stable for objects', () => {
-		const stableObject = object('abcdefghijklmnopqr'.split(''), stableArray);
+		const stableObject = fromPairs('abcdefghijklmnopqr'.split(''), stableArray);
 		const actual = sortBy(stableObject, ({x}) => x);
 
 		assert.deepEqual(actual, stableArray);
