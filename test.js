@@ -28,6 +28,7 @@ describe('sortBy', () => {
 			{ name: 'larry', age: 50 },
 			{ name: 'curly', age: 60 }
 		];
+
 		assert.deepEqual(sortBy(stooges, 'name'), [{ name: 'curly', age: 60 }, { name: 'larry', age: 50 }, { name: 'moe', age: 40 }]);
 		assert.deepEqual(sortBy(stooges, 'name').reverse(), [{ name: 'moe', age: 40 }, { name: 'larry', age: 50 }, { name: 'curly', age: 60 }]);
 
@@ -40,6 +41,7 @@ describe('sortBy', () => {
 			{ user: 'barney', age: 34 }
 		];
 		const expectedUsers = [{ 'user': 'barney', 'age': 36 }, { 'user': 'barney', 'age': 34 }, { 'user': 'fred', 'age': 48 }, { 'user': 'fred', 'age': 40 }];
+
 		assert.deepEqual(sortBy(users, 'user'), expectedUsers);
 		assert.deepEqual(sortBy(users, ({user}) => user), expectedUsers);
 	});
@@ -83,6 +85,7 @@ describe('sortBy', () => {
 
 	it('should uses identity if iterator is not specified', () => {
 		const list = ['q', 'w', 'e', 'r', 't', 'y'];
+
 		assert.deepEqual(sortBy(list), ['e', 'q', 'r', 't', 'w', 'y']);
 	});
 });
