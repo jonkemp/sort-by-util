@@ -16,7 +16,7 @@ $ npm install sort-by-util
 Or [unpkg](https://unpkg.com/sort-by-util/)
 
 ```
-<script src="https://unpkg.com/sort-by-util@1.0.1/umd/index.js" />
+<script src="https://unpkg.com/sort-by-util@1.0.2/umd/index.js" />
 ```
 
 Check out the unit tests on [CodePen](https://codepen.io/jonkemp/full/poJVzxN).
@@ -57,7 +57,7 @@ The array to iterate over.
 
 #### iteratee
 
-Type: `string|function|object`  
+Type: `string` or `function` or `object`  
 Default: `none`
 
 The property name, function or object to sort by.
