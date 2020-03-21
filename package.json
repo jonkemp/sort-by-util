@@ -41,6 +41,7 @@
 		"rollup": "^2.0.6"
 	},
 	"dependencies": {
+		"map-plus": "^1.0.0",
 		"pluck-util": "^1.0.1"
 	}
 }
