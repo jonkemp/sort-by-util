@@ -1,6 +1,5 @@
 const pluck = require('pluck-util');
-const map = require('map-plus');
-const { cb } = require('./lib/index');
+const { cb, map } = require('@jonkemp/package-utils');
 
 const sortBy = (obj, iteratee, context) => {
 	let index = 0;

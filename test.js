@@ -1,8 +1,8 @@
 const assert = require('assert');
 const pluck = require('pluck-util');
 const fromPairs = require('from-pairs');
+const { identity } = require('@jonkemp/package-utils');
 const sortBy = require('./');
-const identity = value => value;
 
 function Pair(x, y) {
 	this.x = x;
