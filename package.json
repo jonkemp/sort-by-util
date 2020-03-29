@@ -1,6 +1,6 @@
 {
 	"name": "sort-by-util",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Returns a sorted copy of an array, ranked in ascending order by the results of running each value through an iteratee.",
 	"main": "index.js",
 	"scripts": {
