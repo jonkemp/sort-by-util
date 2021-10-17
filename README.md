@@ -1,4 +1,4 @@
-# sort-by-util [![Build Status](https://travis-ci.com/jonkemp/sort-by-util.svg?branch=master)](https://travis-ci.com/jonkemp/sort-by-util)
+# sort-by-util ![Build Status](https://github.com/jonkemp/sort-by-util/actions/workflows/main.yml/badge.svg?branch=master)
 
 > Returns a (stably) sorted copy of an array, ranked in ascending order by the results of running each value through an iteratee. iteratee may also be the string name of the property to sort by (eg. length).
 
